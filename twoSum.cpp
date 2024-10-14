@@ -1,6 +1,8 @@
-class Solution {
+class Solution
+{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> twoSum(vector<int> &nums, int target)
+    {
 
         unordered_map<int, list<int>> mp;
         int size = nums.size();
@@ -8,7 +10,8 @@ public:
         for (int i = 0; i < size; i++)
             mp[nums[i]].push_back(i);
 
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++)
+        {
             int rem = target - nums[i];
 
             if (mp.contains(rem) && rem != nums[i])
