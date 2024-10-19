@@ -18,3 +18,10 @@ public:
         
     }
 };
+
+
+int main(){
+    int num = 2736; 
+    Solution s; 
+    cout << s.maximumSwap(num) << endl;
+}
